@@ -1,0 +1,34 @@
+a {
+  color: #0f0;
+}
+body {
+  color: #ccc;
+  background-color: #000037;
+  font-family: 'HelveticaNeueW01-65Medi', 'HelveticaNeueW02-65Medi', 'HelveticaNeueW10-65Medi', 'Tahoma', 'Helvetica', sans-serif;
+  font-size: 16;
+}
+.clear {
+  clear: both;
+}
+code {
+  font-size: 16px;
+}
+h2,
+h3,
+h4,
+h5 {
+  color: #88f;
+}
+iframe,
+h1 > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p > img {
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+strong {
+  color: #0ff;
+}
