@@ -1,0 +1,1 @@
+(function(){define(["model/setting/plugin-path"],function(n){var t;return new(t=function(){function t(){}t.prototype.settings=[n];return t}())})}).call(this);

@@ -1,0 +1,1 @@
+define(["./lib/plugin-base/dom","./lib/dom/base","./domReady"],function(e,s,a){return e({addClass:s.addClass,removeClass:s.removeClass})});

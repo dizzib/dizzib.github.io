@@ -1,0 +1,1 @@
+(function(){var i;i={plugins:[{module:"lib.3p.extension/cujojs/wire/coupler"},{module:"lib.3p.extension/cujojs/wire/profiler"}],controller_plugin_settings:{module:"controller/plugin/settings",init:"init"},plugin_model_settings:{module:"plugin/model/settings"}};define(i)}).call(this);

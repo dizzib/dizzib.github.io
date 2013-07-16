@@ -1,0 +1,1 @@
+(function(e){e(["./when"],function(e){var n;return function t(t,i){if(arguments.length<2){i=t>>>0;t=n}var o=e.defer();setTimeout(function(){o.resolve(t)},i);return o.promise}})})(typeof define=="function"?define:function(e,n){typeof module!="undefined"?module.exports=n(require("./when")):this.when_delay=n(this.when)});

@@ -1,0 +1,1 @@
+(function(){var n=function(n,t){return function(){return n.apply(t,arguments)}};define(function(){var t;return new(t=function(){function t(){this.add=n(this.add,this)}t.prototype.on_add=function(){};t.prototype.add=function(n){if(!n.name.length){n.name="*"}return this.on_add(n)};return t}())})}).call(this);

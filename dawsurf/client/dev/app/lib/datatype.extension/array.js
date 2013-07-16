@@ -1,0 +1,1 @@
+(function(){define(function(){Array.prototype.insert=function(t,i){this.splice(i,0,t);return this};return Array.prototype.remove=function(t){var i,n;if((i=this.indexOf(t))>-1){[].splice.apply(this,[i,i-i+1].concat(n=[])),n}return this}})}).call(this);

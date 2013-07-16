@@ -1,0 +1,1 @@
+(function(){define(["js!lib.3p/modernizr.custom.min.js"],function(){var a;return a=window.Modernizr,a.get_websocket_id=function(){var b,c,d,e,f;f=a._cssomPrefixes;for(d=0,e=f.length;d<e;d++){c=f[d],b=""+c+"WebSocket";if(window[b])return b}if(window.WebSocket)return"WebSocket";return},a.websocket_id=a.get_websocket_id(),window.Modernizr=void 0,a})}).call(this);

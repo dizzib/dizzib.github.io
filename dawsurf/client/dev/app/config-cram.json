@@ -1,0 +1,13 @@
+﻿{
+	'baseUrl':		'.',
+	'destUrl':		'../all.js',
+	'pluginPath':	'/home/andy/src/Mobile/lib.3p/cujojs/curl/plugin',
+	'paths': {
+		curl:			'/home/andy/src/Mobile/lib.3p/cujojs/curl',
+		jquery:			'lib.3p.jquery-1.7.1.min',		// TODO 1.7.2 broken ?
+		knockout:		'lib.3p.extension/knockout',
+		modernizr:		'lib.3p.extension/modernizr',
+		sizzle:			'lib.3p/sizzle.min',
+		underscore:		'lib.3p/underscore.min.js'		// TODO https://github.com/unscriptable/underscore/downloads!
+	}
+}

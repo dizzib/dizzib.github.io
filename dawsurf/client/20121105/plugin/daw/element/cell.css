@@ -1,0 +1,1 @@
+.cell{background-clip:padding-box;-moz-background-clip:padding-box;-webkit-background-clip:padding-box;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;width:72;height:72;overflow:hidden}.box.tame .cell{float:left}.box.wild .cell{position:absolute;left:-9999}.cell{border-bottom:solid 1px transparent;border-right:solid 1px transparent}

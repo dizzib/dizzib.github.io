@@ -1,0 +1,1 @@
+(function(){define(["jquery","plugin/constants"],function(a,b){var c;return new(c=function(){function c(){}return c.prototype.get=function(){return a(".gutter-o")},c.prototype.get_width=function(){return a(".gutter-o").length*b.CELL_SIZE},c}())})}).call(this);

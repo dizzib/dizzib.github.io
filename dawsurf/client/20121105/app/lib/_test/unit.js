@@ -1,0 +1,1 @@
+(function(){var a;a=new(function(){function a(){}return a.prototype.load=function(){return curl(["js!lib.3p/qunit.js","css!lib.3p/qunit.css"]).next(["lib/datatype.extension/array.test","lib/datatype.extension/string.test","lib/coupler.test","lib/guardian.test","lib/profiler.test","lib/regex.pattern.test","lib/sys/net.test"])},a}()),a.load()}).call(this);

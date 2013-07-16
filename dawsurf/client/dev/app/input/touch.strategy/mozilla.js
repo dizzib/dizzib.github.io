@@ -1,0 +1,1 @@
+(function(){define(function(){var e;return new(e=function(){function e(){}e.prototype.event_name_start="MozTouchDown";e.prototype.event_name_move="MozTouchMove";e.prototype.event_name_end="MozTouchUp";e.prototype.get_raw_event=function(e){return e.originalEvent};e.prototype.__create_event_by_raw=function(e){return{originalEvent:e}};return e}())})}).call(this);

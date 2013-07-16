@@ -1,0 +1,1 @@
+if(typeof define=="function"&&define.amd){define(["when"],function(e){return function n(n){return function(r){var t=e.defer();n([r],t.resolve,t.reject);return t.promise}}})}else{module.exports=function createModuleLoader(e){return e}}

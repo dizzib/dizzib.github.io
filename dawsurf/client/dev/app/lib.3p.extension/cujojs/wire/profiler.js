@@ -1,0 +1,1 @@
+(function(){define(["lib/profiler"],function(e){return{wire$plugin:function(i,r,t){var n;n=[];return{facets:{profiler:{create:function(i,r,t){n.push(r.target);if(r.id!=null){r.target.module_name=r.id}if(r.options.active){e.profile(r.target)}return i.resolve()}}}}}}})}).call(this);

@@ -1,0 +1,1 @@
+(function(){define(["underscore","modernizr","lib/guardian"],function(a,b){var c;return c=function(){function c(){a.extend(this,b)}return c.prototype.is_moz_touch_enabled=function(){return b.mq("(-moz-touch-enabled)")},c}(),new c})}).call(this);

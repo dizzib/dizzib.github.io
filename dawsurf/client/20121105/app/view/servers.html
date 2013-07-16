@@ -1,0 +1,69 @@
+﻿<h2>Servers</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Server</th>
+			<th>Port</th>
+			<th>Auto<br/>Connect</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="6" class="right">
+				<a data-bind="click:$root._server_add">Add...</a>
+			</td>
+		</tr>
+	</tfoot>
+	<tbody data-bind="foreach:servers()">
+		<tr>
+			<td>
+				<span data-bind="text:id()" />
+			</td>
+			<td>
+				<span data-bind="text:server()" />
+			</td>
+			<td>
+				<span data-bind="text:port()" />
+			</td>
+			<td>
+				<span data-bind="text:id()==$root.auto_connect_id()?'Yes':'No'" />
+			</td>
+			<td>
+				<a data-bind="click:$root._server_connect, css:{ unavailable:!$root._is_connectible }">Connect</a>
+			</td>
+			<td class="right">
+				<a data-bind="click:$root._server_edit_start">Edit...</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<form id="server-editor" class="editor" data-bind="with:_editor_server(), jqDialog:{autoOpen:false, resizable:false, modal:true, height:350, width:500, closeOnEscape:true}, openDialog:_editor_server">
+	<fieldset>
+		<legend>Server Configuration</legend>
+		<ul>
+			<li>
+				<label for="id">Unique Id</label>
+				<input id="id" name="id" type="text" data-bind="value:id" tabindex="1" placeholder="Unique identifier" />
+			</li>
+			<li>
+				<label>Server</label>
+				<input id="server" name="server" type="text" data-bind="value:server" tabindex="2" placeholder="Name or IP address" />
+			</li>
+			<li>
+				<label>Port</label>
+				<input id="port" name="port" type="number" data-bind="value:port" tabindex="3" placeholder="0 to 65535" />
+			</li>
+			<li>
+				<label>Auto Connect</label>
+				<input id="auto-connect" type="checkbox" data-bind="checked:id()==$root.auto_connect_id(), click:$parent._auto_connect__on_click" tabindex="4" />
+			</li>
+		</ul>
+	</fieldset>
+	<div class="button-bar">
+		<button type="submit" data-bind="jqButton:{}, click:$parent._server_edit_save" class="right" tabindex="12">Save</button>
+		<button data-bind="jqButton:{}, click:$root._server_edit_cancel" tabindex="10">Cancel</button>
+		<button data-bind="jqButton:{}, click:$root._server_delete, visible:!is_new" tabindex="11">Delete</button>
+	</div>
+</form>

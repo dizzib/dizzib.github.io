@@ -1,0 +1,1 @@
+(function(e){e(["./timeout","./delay"],function(e,t){return{timeout:e,delay:t}})})(typeof define=="function"?define:function(e,t){typeof module!="undefined"?module.exports=t.apply(this,e.map(require)):this.when_timed=t(this.when_timeout,this.when_delay)});

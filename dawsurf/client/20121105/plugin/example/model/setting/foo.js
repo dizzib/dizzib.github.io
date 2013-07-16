@@ -1,0 +1,1 @@
+(function(){define(function(){var a;return a=function(){function a(){}return a.prototype.description="A plugin setting which does not need a reload.",a.prototype.is_reload=!1,a.prototype.name="Foo",a.prototype.scope="Plugin",a.prototype.store_key="plugin.example.foo",a.prototype.value_default=function(){return"default-1"},a}(),new a})}).call(this);

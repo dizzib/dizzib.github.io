@@ -1,0 +1,1 @@
+(function(){define(["model/setting/is-enable-jqm","model/setting/plugin-path"],function(a,b){var c;return c=function(){function c(){}return c.prototype.settings=[a,b],c}(),new c})}).call(this);

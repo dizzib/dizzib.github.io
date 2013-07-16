@@ -1,0 +1,1 @@
+(function(){define(function(){var n;return new(n=function(){function n(){}n.prototype.CELL_SIZE=72;return n}())})}).call(this);

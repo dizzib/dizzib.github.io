@@ -1,0 +1,1 @@
+(function(n){n(function(){"use strict";var n=[].slice;return{delegate:e,fromArguments:t};function e(n){return n?[].concat(n):[]}function t(e,t){return n.call(e,t||0)}})})(typeof define=="function"?define:function(n){module.exports=n()});

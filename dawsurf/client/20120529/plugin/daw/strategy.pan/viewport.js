@@ -1,0 +1,1 @@
+(function(){define(["jquery","lib/guardian"],function(a){var b;return b=function(){function a(){}return a}(),new b})}).call(this);

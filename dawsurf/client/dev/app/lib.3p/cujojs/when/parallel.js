@@ -1,0 +1,1 @@
+(function(e){e(["./when"],function(e){return function n(n){var t=Array.prototype.slice.call(arguments,1);return e.map(n,function(e){return e.apply(null,t)})}})})(typeof define=="function"&&define.amd?define:function(e,n){typeof exports=="object"?module.exports=n(require("./when")):this.when_parallel=n(this.when)});

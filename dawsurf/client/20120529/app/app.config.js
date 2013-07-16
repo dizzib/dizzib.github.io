@@ -1,0 +1,3 @@
+// app.config.js
+// NOTE: this file operates at global scope and so cannot be CoffeeScript
+curl_cfg=curl={baseUrl:".",paths:{curl:"lib.3p/cujojs/curl",jquery:"lib.3p/jquery-1.7.1.min",knockout:"lib.3p.extension/knockout",modernizr:"lib.3p.extension/modernizr",sizzle:"lib.3p/sizzle.min",underscore:"lib.3p/underscore.min"},packages:[{name:"aop",path:"lib.3p/cujojs/wire/aop",main:"./"},{name:"when",path:"lib.3p/cujojs/when",main:"./when"},{name:"wire",path:"lib.3p/cujojs/wire",main:"./wire"}]};

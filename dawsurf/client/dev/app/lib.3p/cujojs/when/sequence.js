@@ -1,0 +1,1 @@
+(function(e){e(["./when"],function(e){return function n(n){var t=Array.prototype.slice.call(arguments,1);return e.reduce(n,function(n,r){return e(r.apply(null,t),function(e){n.push(e);return n})},[])}})})(typeof define=="function"&&define.amd?define:function(e,n){typeof exports=="object"?module.exports=n(require("./when")):this.when_sequence=n(this.when)});

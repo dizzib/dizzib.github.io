@@ -1,0 +1,1 @@
+(function(t){t(function(){"use strict";return{isObject:t,inherit:e};function t(t){return t&&Object.prototype.toString.call(t)=="[object Object]"}function e(t){return t?Object.create(t):{}}})})(typeof define=="function"?define:function(t){module.exports=t()});

@@ -1,0 +1,1 @@
+(function(){define(["css!view/app"],function(a){var b;return b=function(){function a(){}return a}(),new b})}).call(this);
