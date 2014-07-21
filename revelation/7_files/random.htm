@@ -1,0 +1,76 @@
+/*
+ * @author : Ed Cradock
+ * @name : shuffle
+ * 
+ * Description :
+ * Randomly shuffles an array using the Fisher-Yates
+ * algorithm.
+*/ 
+
+Array.prototype.shuffle = function()
+{
+   var r; var tmp;
+   for(var i = 0; i <= this.length-1; i++)
+   {
+      r = parseInt(Math.random() * this.length-1);
+
+      // Switch the array elements
+      tmp = this[i];
+      this[i] = this[r];
+      this[r] = tmp;
+   }
+}
+
+window.onload = function()
+{
+	var LIST_ID = 'shuffleMe';
+	var linkList = 
+	[
+		'http://www.HideMyAss.com',
+		'http://www.Anonr.com',
+		'http://www.ProxyPimp.com',
+		'http://www.250.eu',
+		'http://www.Browse.ms',
+		'http://www.Unblock.biz',
+		'http://www.InvisibleSurfing.com',
+		'http://www.kroxy.net',
+		'http://www.ProxyMafia.net',
+		'http://www.ArmyProxy.com',
+		'http://www.CantBustMe.com',
+		'http://www.Proxrio.com',
+		'http://www.TexasProxy.com',
+		'http://www.Vulb.com',
+		'http://www.ProxyStart.com',
+		'http://www.OurProxy.com',
+		'http://www.KeepHidden.com',
+		'http://www.SurfUndercover.com',
+		'http://www.Surfaz.com',
+		'http://www.HideMy.info',
+		'http://www.SecureProxy.us',
+		'http://www.ProxyBuddy.com',
+		'http://www.SiteSurf.net',
+		'http://www.BoratProxy.com',
+		'http://www.LimitKiller.com',
+		'http://www.Unblocked.org',
+		'http://www.Nuip.net',
+		'http://www.WebProxy.pro',
+		'http://www.EnablePrivacy.com'
+	];
+
+	var elems = document.getElementById(LIST_ID).getElementsByTagName('li');
+
+	// Shuffle array
+	linkList.shuffle();
+
+	var name; var url;
+	// Replace list items with array items
+	for(var i = 0; i <= elems.length-1; i++)
+	{
+		if(elems[i].id == 'viewMore') continue;
+
+	   name = linkList[i].replace('http://www.', '');
+		url = linkList[i];
+		elems[i].firstChild.innerHTML = name;
+		elems[i].firstChild.setAttribute('href', url);
+	}
+}

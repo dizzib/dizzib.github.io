@@ -1,0 +1,131 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+div.nethead {
+	width: 100%;
+	height: 89px;
+	background: url(http://www.pfiles.info/networkbar/bg.gif) repeat-x;
+}
+
+div.nethead div {
+	margin: 0 auto;
+	width: 830px;
+}
+
+div.nethead h1 {
+	margin: 12px 0 0 0;
+	padding: 0;
+	width: 125px;
+	height: 17px;
+	float: left;
+	text-indent: -10000px;
+	background: url(http://www.pfiles.info/networkbar/logo.gif) no-repeat;
+}
+
+div.nethead ul {
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+div.nethead ul li {
+	float: left;
+	list-style-type: none;
+	margin: 0 0 0 16px;
+	padding: 0 0 0 12px;
+	background: url(http://www.pfiles.info/networkbar/li.gif) left no-repeat;
+}
+
+div.nethead ul li#viewMore {
+	width: 80px;
+	height: 27px;
+	margin: 0 0 0 16px;
+	padding: 0;
+	background: none left no-repeat;
+	position: relative;
+	top: -3px;
+}
+
+div.nethead ul li#viewMore a {
+	display: block;
+	width: 80px;
+	height: 21px;
+	font: bold 12px Verdana, Arial, Helvetica, Sans-serif;
+	background: #000 url(http://www.pfiles.info/networkbar/viewall.gif) no-repeat;
+	color: #fff;
+	text-align: center;
+	padding: 6px 0 0 0;
+}
+
+html > body div.nethead ul li#viewMore a { height: 21px; }
+
+div.nethead ul li a {
+	font: 13px Arial, Helvetica, Verdana, Sans-serif;
+	background-color: inherit;
+	color: #083a6d;
+	text-decoration: none;
+}
+
+div.nethead form {
+	clear: left;
+	margin: 3px 0 0 0;
+	padding: 0;
+}
+
+html > * div.nethead form {
+	position: relative;
+	top: 14px;
+}
+
+div.nethead form input#url {
+	width: 638px;
+	height: 28px;
+	font-size: 20px;
+	background-color: #fff;
+	color: #1b4778;
+	border: 1px solid #9fabb7;
+}
+
+div.nethead form input.url {
+	width: 638px;
+	height: 28px;
+	font-size: 20px;
+	background-color: #fff;
+	color: #1b4778;
+	border: 1px solid #9fabb7;
+}
+
+
+div.nethead form button {
+	margin: 0;
+	padding: 0;
+	width: 68px;
+	height: 28px;
+	background: #fff url(http://www.pfiles.info/networkbar/surf.gif) no-repeat;
+	color: #093b70;
+	border: 1px solid #9fabb7;
+	font: 18px Verdana, Arial, Helvetica, Sans-serif;
+	text-align: center;
+	position: relative;
+	left: 2px;
+}
+
+html > * div.nethead form button {
+	left: -2px;
+}
+
+div.nethead form a#proxy-settings {
+	height: 16px;
+	background: url(http://www.pfiles.info/networkbar/settings.gif) left no-repeat;
+	color: #0a3971;
+	text-decoration: none;
+	margin: 0 0 0 8px;
+	padding: 2px 0 2px 20px;
+	font: 12px Verdana, Arial, Helvetica, Sans-serif;
+}
+
+html > * div.nethead form a#proxy-settings {
+	position: relative;
+	top: -2px;
+}

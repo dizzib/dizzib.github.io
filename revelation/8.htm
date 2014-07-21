@@ -1,0 +1,2233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="en"><head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><!-- CSS Stylesheet -->
+
+
+
+
+
+
+
+<style type="text/css" id="vbulletin_css">
+<!--
+/* vBulletin 3 CSS For Style 'Default Style' (styleid: 1) */
+body
+{
+	background: #ffffff;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 5px 10px 10px 10px;
+	padding: 0px;
+}
+a:link, body_alink
+{
+	color: #22229C;
+}
+a:visited, body_avisited
+{
+	color: #22229C;
+}
+a:hover, a:active, body_ahover
+{
+	color: #FF4400;
+}
+.page
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+td, th, p, li
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background: #D1D1E1;
+	color: #000000;
+	border: 1px solid #0B198C;
+}
+.tcat
+{
+	background: #869BBF url(http://www.cantbustme.com/surf.php?q=aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9pbWFnZXMvZ3JhZGllbnRzL2dyYWRpZW50X3RjYXQuZ2lm) repeat-x top left;
+	color: #FFFFFF;
+	font: bold 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tcat a:link, .tcat_alink
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	color: #FFFF66;
+	text-decoration: underline;
+}
+.thead
+{
+	background: #5C7099 url(http://www.cantbustme.com/surf.php?q=aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9pbWFnZXMvZ3JhZGllbnRzL2dyYWRpZW50X3RoZWFkLmdpZg%3D%3D) repeat-x top left;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.thead a:link, .thead_alink
+{
+	color: #FFFFFF;
+}
+.thead a:visited, .thead_avisited
+{
+	color: #FFFFFF;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+	color: #FFFF00;
+}
+.tfoot
+{
+	background: #3E5C92;
+	color: #E0E0F6;
+}
+.tfoot a:link, .tfoot_alink
+{
+	color: #E0E0F6;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+	color: #E0E0F6;
+}
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+	color: #FFFF66;
+}
+.alt1, .alt1Active
+{
+	background: #F5F5FF;
+	color: #000000;
+}
+.alt2, .alt2Active
+{
+	background: #E1E4F2;
+	color: #000000;
+}
+td.inlinemod
+{
+	background: #FFFFCC;
+	color: #000000;
+}
+.wysiwyg
+{
+	background: #F5F5FF;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+textarea, .bginput
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+select
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	font-size: 11px;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.smallfont
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #666686;
+}
+.navbar
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background: #3E5C92;
+	color: #E0E0F6;
+}
+.fjdpth0
+{
+	background: #F7F7F7;
+	color: #000000;
+}
+.panel
+{
+	background: #E4E7F5 url(http://www.cantbustme.com/surf.php?q=aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9pbWFnZXMvZ3JhZGllbnRzL2dyYWRpZW50X3BhbmVsLmdpZg%3D%3D) repeat-x top left;
+	color: #000000;
+	padding: 10px;
+	border: 2px outset;
+}
+.panelsurround
+{
+	background: #D1D4E0 url(http://www.cantbustme.com/surf.php?q=aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9pbWFnZXMvZ3JhZGllbnRzL2dyYWRpZW50X3BhbmVsc3Vycm91bmQuZ2lm) repeat-x top left;
+	color: #000000;
+}
+legend
+{
+	color: #22229C;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+	background: #738FBF;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 3px 6px 3px 6px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link, .vbmenu_control_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.vbmenu_popup
+{
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #0B198C;
+}
+.vbmenu_option
+{
+	background: #BBC7CE;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link, .vbmenu_option_alink
+{
+	color: #22229C;
+	text-decoration: none;
+}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+{
+	color: #22229C;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background: #8A949E;
+	color: #FFFFFF;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+.bigusername { font-size: 14pt; }
+
+/* ***** small padding on 'thead' elements ***** */
+td.thead, th.thead, div.thead { padding: 4px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** de-emphasized text */
+.shade, a.shade:link, a.shade:visited { color: #777777; text-decoration: none; }
+a.shade:active, a.shade:hover { color: #FF4400; text-decoration: underline; }
+.tcat .shade, .thead .shade, .tfoot .shade { color: #DDDDDD; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+
+/* ***** don't change the following ***** */
+form { display: inline; }
+label { cursor: default; }
+.normal { font-weight: normal; }
+.inlineimg { vertical-align: middle; }
+.underline { text-decoration: underline; }
+-->
+</style><!-- / CSS Stylesheet --><title>Disclosure Project -- Credibility? - Page 8 - Jason Hommel's Silver Stock Report Subscriber's Forum</title>
+
+
+
+
+
+
+
+
+	
+	
+<link href="8_files/privax-style.css" rel="stylesheet" type="text/css"></head><body>
+ <script src="8_files/random.htm" type="text/javascript"></script> <script src="8_files/urchin.js" type="text/javascript"></script> <script type="text/javascript"> _uacct = "UA-950416-16"; urchinTracker(); </script> <script src="8_files/publisherJS.js"></script> <script type="text/javascript" language="javascript"> initAdversal("e44931f9f306025cc9a6161c7edd1cd2", false); </script> <div class="nethead">
+<div>
+
+ <h1>Privax Network</h1>
+ <ul id="shuffleMe">
+   <li><a href="http://www.enableprivacy.com/">EnablePrivacy.com</a></li>
+   <li><a href="http://www.hidemy.info/">HideMy.info</a></li>
+   <li><a href="http://www.kroxy.net/">kroxy.net</a></li>
+   <li><a href="http://www.boratproxy.com/">BoratProxy.com</a></li>
+   <li><a href="8.htm">CantBustMe.com</a></li>
+  <li id="viewMore"><a href="http://www.privax.us/" title="Privax Network Sites">View All</a></li>
+ </ul> <form method="post" action="http://www.cantbustme.com/surf.php" id="nethead"> <input id="____q" name="q" value="http://jasonhommelforum.com/forums/showthread.php?t=2377&amp;page=8" class="url" type="text"> <button type="submit" name="go" id="nethead">Surf</button><input name="hl[include_form]" value="1" type="hidden">
+<input name="hl[remove_scripts]" value="1" type="hidden">
+<input name="hl[accept_cookies]" value="1" type="hidden">
+<input name="hl[show_images]" value="1" type="hidden">
+<input name="hl[show_referer]" value="1" type="hidden">
+<input name="hl[strip_meta]" value="1" type="hidden">
+<input name="hl[session_cookies]" value="1" type="hidden"></form></div></div><div style="background: transparent url(http://pfiles.info/images/grad-bg.gif) repeat-x scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 24px; padding-top: 4px; font-size: 12px; text-align: center;">
+<img src="8_files/6piotnp.png" alt="star"> <strong><a href="http://www.zymic.com/free-web-hosting/" title="From the makers of Privax/HideMyAss!">Free Web Hosting</a></strong> -  <strong><a href="http://www.privax.us/ads/" title="500,000 page views per day, cheap pricing, learn more!">Advertise Here!</a></strong> <img src="8_files/6piotnp.png" alt="star">
+</div>
+<!-- logo -->
+<center>
+<a href="8.htm"><img src="8_files/surf_014.gif" border="0"></a>
+</center>
+<!-- /logo -->
+
+<!-- content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width: 100%; text-align: left;">
+		<div style="padding: 0px 25px;">
+
+
+
+<br>
+
+<!-- breadcrumb, login, pm info -->
+<table class="tborder" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="alt1" width="100%">
+		
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr valign="bottom">
+				<td><a href="#"><img src="8_files/surf_006.gif" alt="Go Back" border="0"></a></td>
+				<td>&nbsp;</td>
+				<td width="100%"><span class="navbar"><a href="8.htm" accesskey="1">Jason Hommel's Silver Stock Report Subscriber's Forum</a></span> 
+	<span class="navbar">&gt; <a href="8.htm">Economic Discussion Forum</a></span>
+
+</td>
+			</tr>
+			<tr>
+				<td class="navbar" style="font-size: 10pt; padding-top: 1px;" colspan="3"><a href="8.htm"><img class="inlineimg" src="8_files/surf_019.gif" alt="Reload this Page" border="0"></a> <strong>
+	Disclosure Project -- Credibility?
+
+</strong></td>
+			</tr>
+			</tbody></table>			
+		
+	</td>	
+	
+	
+		
+		<td class="alt2" style="padding: 0px;" nowrap="nowrap">
+			
+		<!-- login form -->
+		<form action="http://www.cantbustme.com/surf.php?q=aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9sb2dpbi5waHA%2FZG89bG9naW4%3D" method="post">
+		
+		<table border="0" cellpadding="0" cellspacing="3">
+		<tbody><tr>
+			<td class="smallfont"><label for="navbar_username">User Name</label></td>
+			<td><input class="bginput" style="font-size: 11px;" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" type="text"></td>
+			<td class="smallfont" colspan="2" nowrap="nowrap"><label for="cb_cookieuser_navbar"><input name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" type="checkbox">Remember Me?</label></td>
+		</tr>
+		<tr>
+			<td class="smallfont"><label for="navbar_password">Password</label></td>
+			<td><input class="bginput" style="font-size: 11px;" name="vb_login_password" id="navbar_password" size="10" tabindex="102" type="password"></td>
+			<td><input class="button" value="Log in" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" type="submit"></td>
+		</tr>
+		</tbody></table>
+		<input name="s" value="" type="hidden">
+		<input name="do" value="login" type="hidden">		
+		<input name="vb_login_md5password" type="hidden">
+		<input name="vb_login_md5password_utf" type="hidden">
+		</form>
+		<!-- / login form -->
+			
+		</td>
+		
+		
+	
+</tr>
+</tbody></table>
+<!-- / breadcrumb, login, pm info -->
+
+<!-- nav buttons bar -->
+<div align="center">
+	<table class="tborder" style="border-top-width: 0px;" align="center" border="0" cellpadding="6" cellspacing="0" width="100%">
+	<tbody><tr align="center">
+		
+		
+			<td class="vbmenu_control"><a href="8.htm" rel="nofollow">Register</a></td>
+		
+		
+		<td class="vbmenu_control"><a href="8.htm" accesskey="5">FAQ</a></td>
+		<td class="vbmenu_control"><a href="8.htm">Members List</a></td>
+		<td class="vbmenu_control"><a href="8.htm">Calendar</a></td>
+				
+			
+				
+				<td class="vbmenu_control"><a href="8.htm" accesskey="2">Today's Posts</a></td>
+				
+				<td id="navbar_search" class="vbmenu_control"><a href="8.htm" accesskey="4" rel="nofollow">Search</a> </td>
+			
+			
+		
+		
+		
+	</tr>
+	</tbody></table>
+</div>
+<!-- / nav buttons bar -->
+
+<br>
+
+	<table class="tborder" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+	<tbody><tr>
+		<td class="alt1" width="100%"><strong>Economic Discussion Forum</strong> <span class="smallfont">Economic Discussion</span></td>
+	</tr>
+	</tbody></table>
+	<br>
+
+
+
+<!-- NAVBAR POPUP MENUS -->
+	
+	
+	<!-- header quick search form -->
+	<div class="vbmenu_popup" id="navbar_search_menu" style="display: none;">
+		<table border="0" cellpadding="4" cellspacing="1">
+		<tbody><tr>
+			<td class="thead">Search Forums</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+				<form action="http://www.cantbustme.com/surf.php?q=aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9zZWFyY2gucGhwP2RvPXByb2Nlc3M%3D" method="post">
+					<input name="do" value="process" type="hidden">
+					<input name="quicksearch" value="1" type="hidden">
+					<input name="childforums" value="1" type="hidden">
+					<input name="exactname" value="1" type="hidden">
+					<input name="s" value="" type="hidden">
+					<div><input class="bginput" name="query" size="25" tabindex="1001" type="text"><input class="button" value="Go" tabindex="1004" type="submit"></div>
+					<div style="margin-top: 6px;">
+						<label for="rb_nb_sp0"><input name="showposts" value="0" id="rb_nb_sp0" tabindex="1002" checked="checked" type="radio">Show Threads</label>
+						&nbsp;
+						<label for="rb_nb_sp1"><input name="showposts" value="1" id="rb_nb_sp1" tabindex="1003" type="radio">Show Posts</label>
+					</div>					
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option"><a href="8.htm" accesskey="4" rel="nofollow">Advanced Search</a></td>
+		</tr>
+		
+		</tbody></table>
+	</div>
+	<!-- / header quick search form -->
+	
+
+	
+<!-- / NAVBAR POPUP MENUS -->
+
+<!-- PAGENAV POPUP -->
+
+	<div class="vbmenu_popup" id="pagenav_menu" style="display: none;">
+		<table border="0" cellpadding="4" cellspacing="1">
+		<tbody><tr>
+			<td class="thead" nowrap="nowrap">Go to Page...</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+			<form action="" method="get" id="pagenav_form"><input name="____pgfa" value="aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9pbmRleC5waHA%3D" type="hidden">
+				<input class="bginput" id="pagenav_itxt" style="font-size: 11px;" size="4" type="text">
+				<input class="button" id="pagenav_ibtn" value="Go" type="button">
+			</form>
+			</td>
+		</tr>
+		</tbody></table>
+	</div>
+
+<!-- / PAGENAV POPUP -->
+
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<!-- controls above postbits -->
+<table style="margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="bottom">
+	
+		<td class="smallfont"><a href="8.htm" rel="nofollow"><img src="8_files/surf_011.gif" alt="Reply" border="0"></a></td>
+	
+	<td align="right"><div class="pagenav" align="right">
+<table class="tborder" border="0" cellpadding="3" cellspacing="1">
+<tbody><tr>
+	<td class="vbmenu_control" style="font-weight: normal;">Page 8 of 8</td>
+	<td class="alt1"><a class="smallfont" href="1.htm" title="First Page - Results 1 to 10 of 77"><strong>«</strong> First</a></td>
+	<td class="alt1"><a class="smallfont" href="7.htm" title="Prev Page - Results 61 to 70 of 77">&lt;</a></td>
+	<td class="alt1"><a class="smallfont" href="6.htm" title="Show results 51 to 60 of 77">6</a></td><td class="alt1"><a class="smallfont" href="7.htm" title="Show results 61 to 70 of 77">7</a></td>	<td class="alt2"><span class="smallfont" title="Showing results 71 to 77 of 77"><strong>8</strong></span></td>
+ 
+	
+	
+	<td class="vbmenu_control" title="showthread.php?t=2377"><a name="PageNav"></a></td>
+</tr>
+</tbody></table>
+</div></td>
+</tr>
+</tbody></table>
+<!-- / controls above postbits -->
+
+<!-- toolbar -->
+<table class="tborder" style="border-bottom-width: 0px;" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+			<a href="#post27660"><img class="inlineimg" src="8_files/surf_007.gif" alt="View First Unread" border="0"></a>
+			<a href="#post27660"><strong>View First Unread</strong></a>
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control" id="threadtools" nowrap="nowrap">
+		<a href="8.htm">Thread Tools</a>
+		
+	</td>
+	
+	
+	
+	<td class="vbmenu_control" id="displaymodes" nowrap="nowrap">
+		<a href="8.htm">Display Modes</a>
+		
+	</td>
+	
+	
+	
+	
+</tr>
+</tbody></table>
+<!-- / toolbar -->
+
+
+
+<!-- end content table -->
+
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- / end content table -->
+
+
+
+
+
+<div id="posts"><!-- post #27660 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width: 100%; text-align: left;">
+		<div style="padding: 0px 25px;">
+
+	<div id="edit27660" style="padding: 0px 0px 6px;">
+	<!-- this is not the last post shown on the page -->	
+
+
+
+<table class="tborder" id="post27660" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="thead">
+		<div class="normal" style="float: right;">
+			&nbsp;
+			#<a href="8.htm" target="new" rel="nofollow" id="postcount27660" name="71"><strong>71</strong></a> &nbsp;
+			
+			
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post27660"><img class="inlineimg" src="8_files/surf_005.gif" alt="Unread" border="0"></a>
+			
+				Yesterday, 05:10 PM
+			
+			<a name="newpost"></a>
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding: 0px;">
+		<!-- user info -->
+		<table border="0" cellpadding="0" cellspacing="6" width="100%">
+		<tbody><tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_27660">
+					
+					<a class="bigusername" href="8.htm">dash</a>
+					<img class="inlineimg" src="8_files/surf.gif" alt="dash is offline" border="0">
+
+
+					
+					
+				</div>
+				
+				<div class="smallfont">Senior Member</div>
+				
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td nowrap="nowrap" valign="top">
+				
+				<div class="smallfont">
+					<div>Join Date: Nov 2007</div>
+					<div>Location: North Carolina</div>
+					
+					<div>
+						Posts: 386
+					</div>
+					
+					Rep Power: <span id="reppower_27660_1714">1</span> <div><span id="repdisplay_27660_1714"><img class="inlineimg" src="8_files/surf_009.gif" alt="dash is on a distinguished road" border="0"></span></div>
+					
+					<div>    </div>
+				</div>
+				
+			</td>
+		</tr>
+		</tbody></table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_27660">
+	<!-- message, attachments, sig -->
+	
+		
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="8_files/surf_021.gif" alt="Default" border="0">
+				
+			</div>
+			<hr style="color: rgb(209, 209, 225);" size="1">
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_27660"><div style="margin: 5px 20px 20px;">
+	<div class="smallfont" style="margin-bottom: 2px;">Quote:</div>
+	<table border="0" cellpadding="6" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="alt2" style="border: 1px inset ;">
+			
+				<div>
+					Originally Posted by <strong>dizzib</strong>
+					<a href="8.htm" rel="nofollow"><img class="inlineimg" src="8_files/surf_018.gif" alt="View Post" border="0"></a>
+				</div>
+				<div style="font-style: italic;">Dave you have everything you need.</div>
+			
+		</td>
+	</tr>
+	</tbody></table>
+</div>Gaaah. This is so cryptic. What context are we in? 9/11? Machine
+Intelligence? The Illuminati? Do you mean there is something right
+under my nose and I'm missing it?<br>
+<br>
+-Dave</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px;" align="right">
+			<!-- controls -->
+			
+			
+			
+				<a href="8.htm" rel="nofollow"><img src="8_files/surf_012.gif" alt="Reply With Quote" border="0"></a>
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 27660 popup menu -->
+<div class="vbmenu_popup" id="postmenu_27660_menu" style="display: none;">
+	<table border="0" cellpadding="4" cellspacing="1">
+	<tbody><tr>
+		<td class="thead">dash</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="8.htm">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Send a private message to dash</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm">Visit dash's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Find all posts by dash</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 27660 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #27660 --><!-- post #27664 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width: 100%; text-align: left;">
+		<div style="padding: 0px 25px;">
+
+	<div id="edit27664" style="padding: 0px 0px 6px;">
+	<!-- this is not the last post shown on the page -->	
+
+
+
+<table class="tborder" id="post27664" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="thead">
+		<div class="normal" style="float: right;">
+			&nbsp;
+			#<a href="8.htm" target="new" rel="nofollow" id="postcount27664" name="72"><strong>72</strong></a> &nbsp;
+			
+			
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post27664"><img class="inlineimg" src="8_files/surf_005.gif" alt="Unread" border="0"></a>
+			
+				Yesterday, 05:49 PM
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding: 0px;">
+		<!-- user info -->
+		<table border="0" cellpadding="0" cellspacing="6" width="100%">
+		<tbody><tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_27664">
+					
+					<a class="bigusername" href="8.htm">nuwrldudder</a>
+					<img class="inlineimg" src="8_files/surf.gif" alt="nuwrldudder is offline" border="0">
+
+
+					
+					
+				</div>
+				
+				<div class="smallfont">Senior Member</div>
+				
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td nowrap="nowrap" valign="top">
+				
+				<div class="smallfont">
+					<div>Join Date: Dec 2006</div>
+					
+					
+					<div>
+						Posts: 319
+					</div>
+					
+					Rep Power: <span id="reppower_27664_353">2</span> <div><span id="repdisplay_27664_353"><img class="inlineimg" src="8_files/surf_009.gif" alt="nuwrldudder is on a distinguished road" border="0"></span></div>
+					
+					<div>    </div>
+				</div>
+				
+			</td>
+		</tr>
+		</tbody></table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_27664">
+	<!-- message, attachments, sig -->
+	
+		
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="8_files/surf_021.gif" alt="Default" border="0">
+				
+			</div>
+			<hr style="color: rgb(209, 209, 225);" size="1">
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_27664">Hey, dizzib.  Don't leave.  This was just getting interesting.<img src="8_files/surf_015.gif" alt="" title="EEK!" class="inlineimg" border="0"><img src="8_files/surf_002.gif" alt="" title="Big Grin" class="inlineimg" border="0"><br>
+<br>
+You know there are theories "floating" around in cyberspace (sorry I
+can't find/ remember the reference) that the introduction of an "alien
+terror(ist)" might be the capper for the N.W.O. Afterall, it's
+becomming more difficult for "Them" to fabricate believable sources of
+terrestrial terrorism/ terrorists.<br>
+<br>
+Anybody heard of Gary Mckinnon? He's in jail (I'm not sure if he's been
+covicted, but he's facing up to 70 years) for "hacking" into the
+Pentagon and discovering a list of "Non-Terrestrial Officers",
+fleet-to-fleet transfers and a list of ship names, non of which are U.S
+navy ships.<br>
+<br>
+Also, John Leonard Walson has allegedly found a way to extend the
+capabilities of small telescopes and has been able to achieve optical
+resolutions at almost the diffraction limit. He then discovered, after
+video taping day and night, unknown machinery in the earth's orbit.<br>
+<br>
+So, what does all this mean?  Dunno.<img src="8_files/surf_003.gif" alt="" title="Smile" class="inlineimg" border="0"></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px;" align="right">
+			<!-- controls -->
+			
+			
+			
+				<a href="8.htm" rel="nofollow"><img src="8_files/surf_012.gif" alt="Reply With Quote" border="0"></a>
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 27664 popup menu -->
+<div class="vbmenu_popup" id="postmenu_27664_menu" style="display: none;">
+	<table border="0" cellpadding="4" cellspacing="1">
+	<tbody><tr>
+		<td class="thead">nuwrldudder</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="8.htm">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Send a private message to nuwrldudder</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Find all posts by nuwrldudder</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 27664 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #27664 --><!-- post #27678 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width: 100%; text-align: left;">
+		<div style="padding: 0px 25px;">
+
+	<div id="edit27678" style="padding: 0px 0px 6px;">
+	<!-- this is not the last post shown on the page -->	
+
+
+
+<table class="tborder" id="post27678" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="thead">
+		<div class="normal" style="float: right;">
+			&nbsp;
+			#<a href="8.htm" target="new" rel="nofollow" id="postcount27678" name="73"><strong>73</strong></a> &nbsp;
+			
+			
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post27678"><img class="inlineimg" src="8_files/surf_005.gif" alt="Unread" border="0"></a>
+			
+				Yesterday, 09:13 PM
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding: 0px;">
+		<!-- user info -->
+		<table border="0" cellpadding="0" cellspacing="6" width="100%">
+		<tbody><tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_27678">
+					
+					<a class="bigusername" href="8.htm">dizzib</a>
+					<img class="inlineimg" src="8_files/surf.gif" alt="dizzib is offline" border="0">
+
+
+					
+					
+				</div>
+				
+				<div class="smallfont">Member</div>
+				
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td nowrap="nowrap" valign="top">
+				
+				<div class="smallfont">
+					<div>Join Date: Nov 2007</div>
+					
+					
+					<div>
+						Posts: 43
+					</div>
+					
+					Rep Power: <span id="reppower_27678_1697">0</span> <div><span id="repdisplay_27678_1697"><img class="inlineimg" src="8_files/surf_009.gif" alt="dizzib is on a distinguished road" border="0"></span></div>
+					
+					<div>    </div>
+				</div>
+				
+			</td>
+		</tr>
+		</tbody></table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_27678">
+	<!-- message, attachments, sig -->
+	
+		
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="8_files/surf_021.gif" alt="Default" border="0">
+				
+			</div>
+			<hr style="color: rgb(209, 209, 225);" size="1">
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_27678">Sorry Dave I didn't mean to abandon you like that, please forgive me.<br>
+<br>
+It's just that your post #61 freaked me out, I mean that's some real crazy shit you've written there <img src="8_files/surf_015.gif" alt="" title="EEK!" class="inlineimg" border="0"><br>
+<br>
+I realise now that I've tried to ram an enormous truth down your throat
+and it's driven us both to the point of insanity, so let's take a step
+back. Darn it I really suck at this :-(<br>
+<br>
+I suggest we take a week's break from this to get some sanity back in
+our lives... you lead your normal life and work on machine
+intelligence, and I'll to my normal day job, how's that?<br>
+<br>
+And don't be afraid of 2012 you'll make it through no problem. The
+Illuminati are terrified of you waking up, along with millions of
+others around the world. The key is the US dollar and 911. And there
+are good forces at work protecting us from this evil, so don't sweat it.<br>
+<br>
+This puzzle and solution is the most wondrous thing I've ever encountered in my life.<br>
+<br>
+Cheers,<br>
+db<br>
+<br>
+btw we need to get that email channel working. Did you get my email?</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px;" align="right">
+			<!-- controls -->
+			
+			
+			
+				<a href="8.htm" rel="nofollow"><img src="8_files/surf_012.gif" alt="Reply With Quote" border="0"></a>
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 27678 popup menu -->
+<div class="vbmenu_popup" id="postmenu_27678_menu" style="display: none;">
+	<table border="0" cellpadding="4" cellspacing="1">
+	<tbody><tr>
+		<td class="thead">dizzib</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="8.htm">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Send a private message to dizzib</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Find all posts by dizzib</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 27678 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #27678 --><!-- post #27683 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width: 100%; text-align: left;">
+		<div style="padding: 0px 25px;">
+
+	<div id="edit27683" style="padding: 0px 0px 6px;">
+	<!-- this is not the last post shown on the page -->	
+
+
+
+<table class="tborder" id="post27683" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="thead">
+		<div class="normal" style="float: right;">
+			&nbsp;
+			#<a href="8.htm" target="new" rel="nofollow" id="postcount27683" name="74"><strong>74</strong></a> &nbsp;
+			
+			
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post27683"><img class="inlineimg" src="8_files/surf_005.gif" alt="Unread" border="0"></a>
+			
+				Yesterday, 09:38 PM
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding: 0px;">
+		<!-- user info -->
+		<table border="0" cellpadding="0" cellspacing="6" width="100%">
+		<tbody><tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_27683">
+					
+					<a class="bigusername" href="8.htm">dash</a>
+					<img class="inlineimg" src="8_files/surf.gif" alt="dash is offline" border="0">
+
+
+					
+					
+				</div>
+				
+				<div class="smallfont">Senior Member</div>
+				
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td nowrap="nowrap" valign="top">
+				
+				<div class="smallfont">
+					<div>Join Date: Nov 2007</div>
+					<div>Location: North Carolina</div>
+					
+					<div>
+						Posts: 386
+					</div>
+					
+					Rep Power: <span id="reppower_27683_1714">1</span> <div><span id="repdisplay_27683_1714"><img class="inlineimg" src="8_files/surf_009.gif" alt="dash is on a distinguished road" border="0"></span></div>
+					
+					<div>    </div>
+				</div>
+				
+			</td>
+		</tr>
+		</tbody></table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_27683">
+	<!-- message, attachments, sig -->
+	
+		
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="8_files/surf_021.gif" alt="Default" border="0">
+				
+			</div>
+			<hr style="color: rgb(209, 209, 225);" size="1">
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_27683"><div style="margin: 5px 20px 20px;">
+	<div class="smallfont" style="margin-bottom: 2px;">Quote:</div>
+	<table border="0" cellpadding="6" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="alt2" style="border: 1px inset ;">
+			
+				<div>
+					Originally Posted by <strong>dizzib</strong>
+					<a href="8.htm" rel="nofollow"><img class="inlineimg" src="8_files/surf_018.gif" alt="View Post" border="0"></a>
+				</div>
+				<div style="font-style: italic;">S<br>
+It's just that your post #61 freaked me out, I mean that's some real crazy shit you've written there <img src="8_files/surf_015.gif" alt="" title="EEK!" class="inlineimg" border="0"><br>
+<br>
+...<br>
+<br>
+I realise now that I've tried to ram an enormous truth down your throat
+and it's driven us both to the point of insanity, so let's take a step
+back. Darn it I really suck at this :-(<br>
+<br>
+...<br>
+<br>
+And don't be afraid of 2012 you'll make it through no problem. The
+Illuminati are terrified of you waking up, along with millions of
+others around the world. The key is the US dollar and 911. And there
+are good forces at work protecting us from this evil, so don't sweat it.<br>
+<br>
+...<br>
+<br>
+btw we need to get that email channel working. Did you get my email?</div>
+			
+		</td>
+	</tr>
+	</tbody></table>
+</div>I got your email, you can always email me at <a href="mailto:dashxdr@gmail.com">dashxdr@gmail.com</a>.
+I responded from there. If there is so much conspiracy that they're
+monitoring my gmail account...who knows. There are limits to paranoia.<br>
+<br>
+Don't worry about me. These "demons" have been in my world for a long
+time. I'm sort of paranoid by nature I think. Post #61 freaked you out,
+eh? Welcome to my mind. There are all these intricate things getting
+built in my mind, like sandcastles. Weird stuff, but in the end I think
+the truth might be even stranger...<br>
+<br>
+As I said to Shelby once, "Don't mind me. I too, am in hell." This line
+actually came from a Larry Niven book called "Inferno". Benito Musolini
+said it to Allan Carpenter, the hero of the story.<br>
+<br>
+US dollar and 911. What do you think of my American Silver Eagle
+conspiracy? This one involves Kennedy was assasinated because he was
+going to issue government money backed by silver (or gold, I can't
+remember exactly). There were Kennedy dollars that were actually
+released. Supposedly he wanted to wipe out the Federal Reserve. So they
+killed him. So my theory is the liberty dollars are minted by "the good
+guys" in the know in government, in order to get silver out into as
+many hands as possible. Such that when the dollar collapses, silver
+dollars will be spread around enough to create a new economy, not
+involving federal reserve notes, but based on silver.<br>
+<br>
+-Dave</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px;" align="right">
+			<!-- controls -->
+			
+			
+			
+				<a href="8.htm" rel="nofollow"><img src="8_files/surf_012.gif" alt="Reply With Quote" border="0"></a>
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 27683 popup menu -->
+<div class="vbmenu_popup" id="postmenu_27683_menu" style="display: none;">
+	<table border="0" cellpadding="4" cellspacing="1">
+	<tbody><tr>
+		<td class="thead">dash</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="8.htm">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Send a private message to dash</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm">Visit dash's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Find all posts by dash</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 27683 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #27683 --><!-- post #27690 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width: 100%; text-align: left;">
+		<div style="padding: 0px 25px;">
+
+	<div id="edit27690" style="padding: 0px 0px 6px;">
+	<!-- this is not the last post shown on the page -->	
+
+
+
+<table class="tborder" id="post27690" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="thead">
+		<div class="normal" style="float: right;">
+			&nbsp;
+			#<a href="8.htm" target="new" rel="nofollow" id="postcount27690" name="75"><strong>75</strong></a> &nbsp;
+			
+			
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post27690"><img class="inlineimg" src="8_files/surf_005.gif" alt="Unread" border="0"></a>
+			
+				Yesterday, 11:17 PM
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding: 0px;">
+		<!-- user info -->
+		<table border="0" cellpadding="0" cellspacing="6" width="100%">
+		<tbody><tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_27690">
+					
+					<a class="bigusername" href="8.htm">Curt</a>
+					
+<img class="inlineimg" src="8_files/surf_017.gif" alt="Curt is online now" border="0">
+
+					
+					
+				</div>
+				
+				<div class="smallfont">Junior Member</div>
+				
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td nowrap="nowrap" valign="top">
+				
+				<div class="smallfont">
+					<div>Join Date: Mar 2007</div>
+					
+					
+					<div>
+						Posts: 10
+					</div>
+					
+					Rep Power: <span id="reppower_27690_572">0</span> <div><span id="repdisplay_27690_572"><img class="inlineimg" src="8_files/surf_009.gif" alt="Curt is on a distinguished road" border="0"></span></div>
+					
+					<div>    </div>
+				</div>
+				
+			</td>
+		</tr>
+		</tbody></table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_27690">
+	<!-- message, attachments, sig -->
+	
+		
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="8_files/surf_021.gif" alt="Default" border="0">
+				
+			</div>
+			<hr style="color: rgb(209, 209, 225);" size="1">
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_27690">Daniel
+answered in the presence of the king, and said, "The secret which the
+king has demanded, the wise men, the astrologers, the magicians, and
+the soothsayers cannot declare to the king. <br>
+<br>
+"But there is a God in heaven who reveals secrets, and He has made
+known to King Nebuchadnezzar what will be in the latter days. Your
+dream, and the visions of your head upon your bed, were these: <br>
+Daniel 2:27,28<br>
+<br>
+And when I saw Him, I fell at His feet as dead. But He laid His right
+hand on me, saying to me, "Do not be afraid; I am the First and the
+Last.<br>
+<br>
+"I am He who lives, and was dead, and behold, I am alive forevermore. Amen. And I have the keys of Hades and of Death. <br>
+<br>
+ "Write the things which you have seen, and the things which are, and the things which will take place after this. <br>
+Revelation 1:17-19<br>
+<br>
+For the word of God is living and powerful, and sharper than any
+two-edged sword, piercing even to the division of soul and spirit, and
+of joints and marrow, and is a discerner of the thoughts and intents of
+the heart. <br>
+<br>
+And there is no creature hidden from His sight, but all things are
+naked and open to the eyes of Him to whom we must give account.<br>
+Hebrews 4:12,13</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px;" align="right">
+			<!-- controls -->
+			
+			
+			
+				<a href="8.htm" rel="nofollow"><img src="8_files/surf_012.gif" alt="Reply With Quote" border="0"></a>
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 27690 popup menu -->
+<div class="vbmenu_popup" id="postmenu_27690_menu" style="display: none;">
+	<table border="0" cellpadding="4" cellspacing="1">
+	<tbody><tr>
+		<td class="thead">Curt</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="8.htm">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Send a private message to Curt</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Find all posts by Curt</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 27690 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #27690 --><!-- post #27691 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width: 100%; text-align: left;">
+		<div style="padding: 0px 25px;">
+
+	<div id="edit27691" style="padding: 0px 0px 6px;">
+	<!-- this is not the last post shown on the page -->	
+
+
+
+<table class="tborder" id="post27691" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="thead">
+		<div class="normal" style="float: right;">
+			&nbsp;
+			#<a href="8.htm" target="new" rel="nofollow" id="postcount27691" name="76"><strong>76</strong></a> &nbsp;
+			
+			
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post27691"><img class="inlineimg" src="8_files/surf_005.gif" alt="Unread" border="0"></a>
+			
+				Yesterday, 11:38 PM
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding: 0px;">
+		<!-- user info -->
+		<table border="0" cellpadding="0" cellspacing="6" width="100%">
+		<tbody><tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_27691">
+					
+					<a class="bigusername" href="8.htm">dizzib</a>
+					<img class="inlineimg" src="8_files/surf.gif" alt="dizzib is offline" border="0">
+
+
+					
+					
+				</div>
+				
+				<div class="smallfont">Member</div>
+				
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td nowrap="nowrap" valign="top">
+				
+				<div class="smallfont">
+					<div>Join Date: Nov 2007</div>
+					
+					
+					<div>
+						Posts: 43
+					</div>
+					
+					Rep Power: <span id="reppower_27691_1697">0</span> <div><span id="repdisplay_27691_1697"><img class="inlineimg" src="8_files/surf_009.gif" alt="dizzib is on a distinguished road" border="0"></span></div>
+					
+					<div>    </div>
+				</div>
+				
+			</td>
+		</tr>
+		</tbody></table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_27691">
+	<!-- message, attachments, sig -->
+	
+		
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="8_files/surf_021.gif" alt="Default" border="0">
+			</div>
+			<hr style="color: rgb(209, 209, 225);" size="1">
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_27691">THIS IS REVELATION. I AM CHRIST RESURRECTED.<br>
+<br>
+<br>
+I have lived these 3 novels...<br>
+<br>
+1. 1984 -- I AM WINSTON but I lived because I RESISTED TEMPTATION
+<br>
+<br>
+2. The Picture of Dorian Gray -- I AM DORIAN GRAY and I have sinned through LUST FOR PORNOGRAPHY
+<br>
+<br>
+3. The Matrix -- I am NEO and I HAVE COME TO SET YOU FREE.
+<br>
+<br>
+<br>
+The universal message is LOVE and FREE WILL.<br>
+<br>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px;" align="right">
+			<!-- controls -->
+			
+			
+			
+				<a href="8.htm" rel="nofollow"><img src="8_files/surf_012.gif" alt="Reply With Quote" border="0"></a>
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 27691 popup menu -->
+<div class="vbmenu_popup" id="postmenu_27691_menu" style="display: none;">
+	<table border="0" cellpadding="4" cellspacing="1">
+	<tbody><tr>
+		<td class="thead">dizzib</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="8.htm">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Send a private message to dizzib</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Find all posts by dizzib</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 27691 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #27691 --><!-- post #27692 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width: 100%; text-align: left;">
+		<div style="padding: 0px 25px;">
+
+	<div id="edit27692" style="padding: 0px 0px 6px;">
+		
+
+
+
+<table class="tborder" id="post27692" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr>
+	<td class="thead">
+		<div class="normal" style="float: right;">
+			&nbsp;
+			#<a href="8.htm" target="new" rel="nofollow" id="postcount27692" name="77"><strong>77</strong></a> &nbsp;
+			
+			
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post27692"><img class="inlineimg" src="8_files/surf_005.gif" alt="Unread" border="0"></a>
+			
+				Today, 12:20 AM
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding: 0px;">
+		<!-- user info -->
+		<table border="0" cellpadding="0" cellspacing="6" width="100%">
+		<tbody><tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_27692">
+					
+					<a class="bigusername" href="8.htm">investor123</a>
+					<img class="inlineimg" src="8_files/surf.gif" alt="investor123 is offline" border="0">
+
+
+					
+					
+				</div>
+				
+				<div class="smallfont">Senior Member</div>
+				
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td nowrap="nowrap" valign="top">
+				
+				<div class="smallfont">
+					<div>Join Date: Jul 2006</div>
+					
+					
+					<div>
+						Posts: 123
+					</div>
+					
+					Rep Power: <span id="reppower_27692_196">2</span> <div><span id="repdisplay_27692_196"><img class="inlineimg" src="8_files/surf_009.gif" alt="investor123 is on a distinguished road" border="0"></span></div>
+					
+					<div>    </div>
+				</div>
+				
+			</td>
+		</tr>
+		</tbody></table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_27692">
+	<!-- message, attachments, sig -->
+	
+		
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="8_files/surf_021.gif" alt="Default" border="0">
+				
+			</div>
+			<hr style="color: rgb(209, 209, 225);" size="1">
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_27692"><div style="margin: 5px 20px 20px;">
+	<div class="smallfont" style="margin-bottom: 2px;">Quote:</div>
+	<table border="0" cellpadding="6" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="alt2" style="border: 1px inset ;">
+Don't work for the Cabal or the Illuminati, don't work against them.
+Work for yourself. The opposite of love is not hate. It's indifference.
+Do you see? You rob them of their power when you yourself ignore them.
+If you try to fight them you give them power over you. They're just a
+distraction anyway. NOTE: This last paragraph is just my opinion. I
+don't have all the answers. At some point a problem is just too big to
+fight. Maybe then all you can do is ride it out. </td>
+	</tr>
+	</tbody></table>
+</div>Well said. Never, NEVER stop seeking the truth. Once you think
+you know the answer, that's an illusion! The answer is never really
+known IMO because the human mind may never really comprehend the divine
+mind of the creator of all things.<br>
+<br>
+I do believe that the search for the answer is also a link to our own
+search for oneness with God. The very act of thinking, questioning,
+wanting, desiring, intending.. are all IMO divine acts. You can't do
+these things unless you embody aspects of the creator. The creators
+desire to create, to intend, to want, etc!<br>
+<br>
+Never think you know everything and never stop wanting to learn your own origin!<br>
+<br>
+A part of me is excited because a part of me feels that I am really
+starting to put the pieces of the puzzle together.. I won't know the
+'divine' truth of all things.. but wanting to know opens up new
+doorways.. and I think that is why for some people who seek answers
+because they always have an open mind will have that divine doorway
+keep opening up.. that may be why David Wilcock was able to experience
+so many things that the "average" person may not experience.. and that
+may be why he can claim things that the "average person won't claim.
+That's not just true for David, it is true for everyone of us here. We
+each took a path that may look different for each person.. but each
+path adds to the overall "consciousness" in evolution for humanity!</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px;" align="right">
+			<!-- controls -->
+			
+			
+			
+				<a href="8.htm" rel="nofollow"><img src="8_files/surf_012.gif" alt="Reply With Quote" border="0"></a>
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</tbody></table>
+
+
+<!-- post 27692 popup menu -->
+<div class="vbmenu_popup" id="postmenu_27692_menu" style="display: none;">
+	<table border="0" cellpadding="4" cellspacing="1">
+	<tbody><tr>
+		<td class="thead">investor123</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="8.htm">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Send a private message to investor123</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="8.htm" rel="nofollow">Find all posts by investor123</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 27692 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #27692 --><div id="lastpost"></div></div>
+
+<!-- start content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width: 100%; text-align: left;">
+		<div style="padding: 0px 25px;">
+
+<!-- / start content table -->
+
+<!-- controls below postbits -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top">
+	
+		<td class="smallfont"><a href="8.htm" rel="nofollow"><img src="8_files/surf_011.gif" alt="Reply" border="0"></a></td>
+		
+	
+		<td align="right"><div class="pagenav" align="right">
+<table class="tborder" border="0" cellpadding="3" cellspacing="1">
+<tbody><tr>
+	<td class="vbmenu_control" style="font-weight: normal;">Page 8 of 8</td>
+	<td class="alt1"><a class="smallfont" href="1.htm" title="First Page - Results 1 to 10 of 77"><strong>«</strong> First</a></td>
+	<td class="alt1"><a class="smallfont" href="7.htm" title="Prev Page - Results 61 to 70 of 77">&lt;</a></td>
+	<td class="alt1"><a class="smallfont" href="6.htm" title="Show results 51 to 60 of 77">6</a></td><td class="alt1"><a class="smallfont" href="7.htm" title="Show results 61 to 70 of 77">7</a></td>	<td class="alt2"><span class="smallfont" title="Showing results 71 to 77 of 77"><strong>8</strong></span></td>
+ 
+	
+	
+	<td class="vbmenu_control" title="showthread.php?t=2377"><a name="PageNav"></a></td>
+</tr>
+</tbody></table>
+</div>
+						
+		</td>
+	
+</tr>
+</tbody></table>
+<!-- / controls below postbits -->
+
+
+
+
+<br>
+
+<div class="smallfont" align="center">
+	<strong>«</strong>
+		<a href="8.htm" rel="nofollow">Previous Thread</a>
+		|
+		<a href="8.htm" rel="nofollow">Next Thread</a>
+	<strong>»</strong>
+</div>
+
+
+<br>
+
+
+
+
+
+
+
+
+<!-- currently active users -->
+
+	<table class="tborder" align="center" border="0" cellpadding="6" cellspacing="1" width="100%">
+	<tbody><tr>
+		<td class="tcat" colspan="2">
+			Currently Active Users Viewing This Thread: 3 <span class="normal">(2 members and 1 guests)</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="alt1" colspan="2">
+			<span class="smallfont"><a href="8.htm">studbkr2</a>, <a href="8.htm">Curt</a></span>
+		</td>
+	</tr>
+	</tbody></table>
+
+<!-- end currently active users -->
+
+
+<!-- popup menu contents -->
+<br>
+
+<!-- thread tools menu -->
+<div class="vbmenu_popup" id="threadtools_menu" style="display: none;">
+<form action="http://www.cantbustme.com/surf.php?q=aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9wb3N0aW5ncy5waHA%2FdD0yMzc3JmFtcDtwb2xsaWQ9" method="post" name="threadadminform">
+	<table border="0" cellpadding="4" cellspacing="1">
+	<tbody><tr>
+		<td class="thead">Thread Tools<a name="goto_threadtools"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="8_files/surf_016.gif" alt="Show Printable Version"> <a href="8.htm" accesskey="3" rel="nofollow">Show Printable Version</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="8_files/surf_004.gif" alt="Email this Page"> <a href="8.htm" rel="nofollow">Email this Page</a></td>
+	</tr>
+	
+	
+	
+	</tbody></table>
+</form>
+</div>
+<!-- / thread tools menu -->
+
+<!-- **************************************************** -->
+
+<!-- thread display mode menu -->
+<div class="vbmenu_popup" id="displaymodes_menu" style="display: none;">
+	<table border="0" cellpadding="4" cellspacing="1">
+	<tbody><tr>
+		<td class="thead">Display Modes<a name="goto_displaymodes"></a></td>
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option" title="nohilite"><img class="inlineimg" src="8_files/surf_008.gif" alt="Linear Mode"> <strong>Linear Mode</strong></td>
+	
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option"><img class="inlineimg" src="8_files/surf_010.gif" alt="Hybrid Mode"> <a href="8.htm">Switch to Hybrid Mode</a></td>
+	
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option"><img class="inlineimg" src="8_files/surf_020.gif" alt="Threaded Mode"> <a href="8.htm">Switch to Threaded Mode</a></td>
+	
+	</tr>
+	</tbody></table>
+</div>
+<!-- / thread display mode menu -->
+
+<!-- **************************************************** -->
+
+
+
+<!-- **************************************************** -->
+
+
+
+<!-- / popup menu contents -->
+
+
+<!-- forum rules and admin links -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="bottom">
+	<td class="smallfont" align="left">
+		<table class="tborder" border="0" cellpadding="6" cellspacing="1" width="180">
+<thead>
+<tr>
+	<td class="thead">
+		<a style="float: right;" href="#top"><img id="collapseimg_forumrules" src="8_files/surf_013.gif" alt="" border="0"></a>
+		Posting Rules
+	</td>
+</tr>
+</thead>
+<tbody id="collapseobj_forumrules" style="">
+<tr>
+	<td class="alt1" nowrap="nowrap"><div class="smallfont">
+		
+		<div>You <strong>may not</strong> post new threads</div>
+		<div>You <strong>may not</strong> post replies</div>
+		<div>You <strong>may not</strong> post attachments</div>
+		<div>You <strong>may not</strong> edit your posts</div>
+		<hr>
+		
+		<div><a href="8.htm" target="_blank">vB code</a> is <strong>On</strong></div>
+		<div><a href="8.htm" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="8.htm" target="_blank">[IMG]</a> code is <strong>On</strong></div>
+		<div>HTML code is <strong>Off</strong></div>
+	</div></td>
+</tr>
+</tbody>
+</table>
+	</td>
+	<td class="smallfont" align="right">
+		<table border="0" cellpadding="0" cellspacing="0">
+		
+		<tbody><tr>
+			<td>
+			<div class="smallfont" style="text-align: left; white-space: nowrap;">
+	<form action="" method="get"><input name="____pgfa" value="aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9mb3J1bWRpc3BsYXkucGhw" type="hidden">
+	<input name="s" value="" type="hidden">
+	<input name="daysprune" value="" type="hidden">
+	<strong>Forum Jump</strong><br>
+	<select name="f">
+		<optgroup label="Site Areas">
+			<option value="cp">User Control Panel</option>
+			<option value="pm">Private Messages</option>
+			<option value="subs">Subscriptions</option>
+			<option value="wol">Who's Online</option>
+			<option value="search">Search Forums</option>
+			<option value="home">Forums Home</option>
+		</optgroup>
+		<optgroup label="Forums">
+		<option value="1" class="fjsel" selected="selected"> Economic Discussion Forum</option>
+<option value="2" class="fjdpth0"> Stock Tip Forum</option>
+
+		</optgroup>
+	</select><input class="button" value="Go" type="submit">
+	</form>
+</div>
+			</td>
+		</tr>		
+		</tbody></table>
+	</td>
+</tr>
+</tbody></table>
+<!-- /forum rules and admin links -->
+
+<br>
+
+
+
+<br>
+<div class="smallfont" align="center">All times are GMT -5. The time now is <span class="time">02:28 AM</span>.</div>
+<br>
+
+
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- /content area table -->
+
+<form action="" method="get"><input name="____pgfa" value="aHR0cDovL2phc29uaG9tbWVsZm9ydW0uY29tL2ZvcnVtcy9pbmRleC5waHA%3D" type="hidden">
+	
+<table class="page" align="center" border="0" cellpadding="6" cellspacing="0" width="100%">
+<tbody><tr>
+	
+	
+	<td class="tfoot" align="right" width="100%">
+		<div class="smallfont">
+			<strong>
+				<a href="8.htm" rel="nofollow">Contact Us</a> -
+				<a href="8.htm">Silver Stock Report</a> -
+				
+				
+				<a href="8.htm">Archive</a> -
+				
+				<a href="#top">Top</a>
+			</strong>
+		</div>
+	</td>
+</tr>
+</tbody></table>
+
+<br>
+
+<div align="center">
+	<div class="smallfont" align="center">
+	<!-- Do not remove this copyright notice -->
+	Powered by vBulletin® Version 3.6.7<br>Copyright ©2000 - 2008, Jelsoft Enterprises Ltd.
+	<!-- Do not remove this copyright notice -->
+	</div>
+	
+	<div class="smallfont" align="center">
+	<!-- Do not remove  or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove  or your scheduled tasks will cease to function -->
+	
+	Copyright SilverStockReport 2007
+	</div>
+</div>
+
+</form>
+
+
+
+
+<!-- temp -->
+<div style="display: none;">
+	<!-- thread rate -->
+	
+		
+	
+	<!-- / thread rate -->
+</div>
+
+</body></html>
