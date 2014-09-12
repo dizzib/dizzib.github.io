@@ -1,92 +1,83 @@
-<!DOCTYPE html><html><meta charset="utf-8"><head><title>Finesse -- an arcade puzzle game for the Atari ST</title><link href="index.css" rel="stylesheet" type="text/css"/></head><body><h1 id="finesseassetbannergif-finesse-banner"><img src="asset/banner.gif" alt="Finesse" title="Finesse banner" /></h1>
-
+<!DOCTYPE html><html><meta charset="utf-8"><head><title>Finesse -- an arcade puzzle game for the Atari ST</title><link href="index.css" rel="stylesheet" type="text/css"/></head><body><h1 id="-finesse-asset-banner-gif-finesse-banner-"><img src="asset/banner.gif" alt="Finesse" title="Finesse banner"></h1>
 <h2 id="introduction">Introduction</h2>
-
 <p>Finesse is an arcade puzzle game for the <a href="http://en.wikipedia.org/wiki/Atari_ST">Atari ST</a> which I wrote in 1991 but never released until now.</p>
-
-<iframe width="480" height="360" src="http://www.youtube.com/embed/gQkQns-FebY" frameborder="0" allowfullscreen=""></iframe>
+<iframe width="480" height="360" src="http://www.youtube.com/embed/gQkQns-FebY" frameborder="0" allowfullscreen></iframe>
 
 <p>Finesse should run in any decent Atari ST emulator such as <a href="https://code.google.com/p/steem-engine/">Steem</a> running TOS v1.62.
 Download, unzip and run <a href="finexe.zip">the disk image</a>.</p>
-
 <h2 id="the-arena">The Arena</h2>
-
 <p>At the centre of the screen is a bat which you can rotate, surrounded by clusters of light bulbs.</p>
-
 <p>Each bulb can be lit in one of seven different colours, or off.</p>
-
 <p>A coloured ring around a bulb indicates its target colour:
-<img src="asset/target.gif" alt="Target" /></p>
-
+<img src="asset/target.gif" alt="Target"></p>
 <p>In each cluster the bulb nearest the bat is the prime-bulb, encircled by dots:
-<img src="asset/prime.gif" alt="Target" /></p>
-
+<img src="asset/prime.gif" alt="Target"></p>
 <h2 id="rules">Rules</h2>
-
 <p>The clusters are affected by small coloured pyramids which bounce around the screen:
-<img src="asset/pyramid.gif" alt="Target" /></p>
-
+<img src="asset/pyramid.gif" alt="Target"></p>
 <p>When a pyramid strikes a cluster:</p>
-
 <ol>
-  <li>
-    <p>if the prime-bulb is off, then the bulb lights up in the pyramid&rsquo;s colour.</p>
-  </li>
-  <li>
-    <p>if the prime-bulb is lit in the pyramid&rsquo;s colour, then the bulb turns off.</p>
-  </li>
-  <li>
-    <p>otherwise:</p>
-
-    <p>a) if the cluster contains a bulb of the pyramid&rsquo;s colour, then it rotates one place clockwise.</p>
-
-    <p>b) otherwise the pyramid changes colour to that of the prime-bulb</p>
-  </li>
+<li><p>if the prime-bulb is off, then the bulb lights up in the pyramid&#39;s colour.</p>
+</li>
+<li><p>if the prime-bulb is lit in the pyramid&#39;s colour, then the bulb turns off.</p>
+</li>
+<li><p>otherwise:</p>
+<p> a) if the cluster contains a bulb of the pyramid&#39;s colour, then it rotates one place clockwise.</p>
+<p> b) otherwise the pyramid changes colour to that of the prime-bulb</p>
+</li>
 </ol>
-
 <p>A level is complete when all the ringed bulbs are lit in their target colours.
 There are 100 levels to complete.</p>
-
 <h2 id="gameplay">Gameplay</h2>
-
 <p>Press <strong>fire</strong> to start,
 then type a 4-digit passcode to enter a later level or press <strong>fire</strong> again to start at level 1.</p>
-
 <p>At the start of each level you are given a number of finesses (moves).
 The countdown gives you a little time to think ahead before the first pyramid is injected.</p>
-
 <p>The colours of one or more pyramids are shown just above the countdown after which the leftmost
 pyramid is injected first, followed by the others.</p>
-
-<p>During play, a pyramid striking the arena&rsquo;s edge reduces the number of finesses by 1.
+<p>During play, a pyramid striking the arena&#39;s edge reduces the number of finesses by 1.
 When this reaches zero the game ends.</p>
-
 <p>To help you progress, a 4-digit passcode is shown after every 5 levels.</p>
-
 <h2 id="controls">Controls</h2>
-
-<pre><code>	Joystick left/right	Rotate bat
-	Joystick fire		Speed up pyramids (for experts only!)
-
-	Spacebar		Restart level
-	P			Pause
-	ESC			Quit
-</code></pre>
-
-<p>If you don&rsquo;t have a joystick, a good emulator should let you map your keyboard to joystick left/right and fire.</p>
-
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Joystick left/right</td>
+<td>Rotate bat</td>
+</tr>
+<tr>
+<td>Joystick fire</td>
+<td>Speed up pyramids (for experts only!)</td>
+</tr>
+<tr>
+<td>Spacebar</td>
+<td>Restart level</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Pause</td>
+</tr>
+<tr>
+<td>ESC</td>
+<td>Quit</td>
+</tr>
+</tbody>
+</table>
+<p>If you don&#39;t have a joystick, a good emulator should let you map your keyboard to joystick left/right and fire.</p>
 <h2 id="scoring">Scoring</h2>
-
 <p>1 point for each finesse left in the level-intro countdown after <strong>fire</strong> is pressed.</p>
-
 <p>5 points for each lit bulb at the end of a level.</p>
-
-<p><br />
-<br />
+<p><br/>
+<br/>
 Last update: Dec 2012
-<br />
-<br />
-<br />
+<br/>
+<br/>
+<br/>
 &copy; 2012 dizzib</p>
-
 </body></html>

@@ -29,6 +29,13 @@ p > img {
   margin-left: 0.5em;
   vertical-align: middle;
 }
+td,
+th {
+  padding-left: 1em;
+}
+th {
+  text-align: left;
+}
 strong {
   color: #0ff;
 }
