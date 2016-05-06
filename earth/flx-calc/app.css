@@ -1,0 +1,16 @@
+body {
+  background: #fff;
+  color: #000;
+  margin: 1em;
+}
+.field {
+  margin-bottom: 0.5em;
+}
+input {
+  margin-right: 0.5em;
+  width: 5em;
+}
+input[type='text'] {
+  font-weight: bold;
+  text-align: right;
+}
