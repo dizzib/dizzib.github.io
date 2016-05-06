@@ -3,8 +3,8 @@ body {
   color: #000;
   margin: 1em;
 }
-.field {
-  margin-bottom: 0.5em;
+fieldset {
+  margin-top: 1em;
 }
 input {
   margin-right: 0.5em;
@@ -13,4 +13,7 @@ input {
 input[type='text'] {
   font-weight: bold;
   text-align: right;
+}
+.field {
+  margin-bottom: 0.5em;
 }
