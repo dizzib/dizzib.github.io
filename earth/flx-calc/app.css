@@ -10,10 +10,19 @@ input {
   margin-right: 0.5em;
   width: 5em;
 }
+input[type='checkbox'] {
+  width: 1em;
+}
 input[type='text'] {
   font-weight: bold;
   text-align: right;
 }
-.field {
+#rho_w {
+  width: 15em;
+}
+.field-text {
   margin-bottom: 0.5em;
+}
+.hide {
+  display: none;
 }

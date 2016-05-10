@@ -11,6 +11,6 @@ Install [node.js][nodejs] then:
 
     flx-calc > b.a    # build everything
 
-You should now be able to point your browser at `_build/site/index.html`
+You should now be able to point your browser at `localhost:7000`
 
 [nodejs]: http://nodejs.org/download/
