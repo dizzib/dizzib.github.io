@@ -20,6 +20,9 @@ input[type='text'] {
 #rho_w {
   width: 15em;
 }
+.bold {
+  font-weight: bold;
+}
 .field-text {
   margin-bottom: 0.5em;
 }
