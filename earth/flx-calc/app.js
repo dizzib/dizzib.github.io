@@ -7,19 +7,23 @@
   DEFAULTINS = {
     d: 1.1,
     dl: 1.5,
-    x: 250,
     l_o: 1,
     l_s: 1,
     m_s: 0.9,
     nb: true,
     nu: 0.46,
-    T_max: 1000
+    T_max: 1000,
+    uy: 0.1,
+    x: 250
   };
   $('input').on('change', function(){
     return calculate();
   });
   $('#nb').on('change', function(){
     return setRho_wAccess();
+  });
+  $('.help-btn').on('click', function(){
+    return $(this).parents('.help').toggleClass('open closed');
   });
   populateIns(getInsByQuerystring());
   setRho_wAccess();
@@ -36,7 +40,11 @@
     outs = window.calc(ins);
     for (k in outs) {
       v = outs[k];
-      $("#" + k).text(round(v)).val(round(v));
+      v = Math.round(v * Math.pow(10, 4)) / Math.pow(10, 4);
+      $("#" + k + ", ." + k).text(v).val(v);
+      if (ins[k]) {
+        ins[k] = v;
+      }
     }
     return setQuerystringByIns(ins);
   }
@@ -62,9 +70,6 @@
       }
     }
     return results$;
-  }
-  function round(it){
-    return Math.round(it * Math.pow(10, 4)) / Math.pow(10, 4);
   }
   function setRho_wAccess(){
     return $('#rho_w').prop('disabled', $('#nb').prop('checked'));

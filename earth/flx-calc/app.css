@@ -26,6 +26,19 @@ input[type='text'] {
 .field-text {
   margin-bottom: 0.5em;
 }
+.help.closed .open {
+  display: none;
+}
+.help.open .closed {
+  display: none;
+}
+.help-btn {
+  color: #00f;
+  cursor: pointer;
+}
+.help-text {
+  background: #ff0;
+}
 .hide {
   display: none;
 }
