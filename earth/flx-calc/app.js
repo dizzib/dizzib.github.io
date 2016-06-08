@@ -5,31 +5,40 @@
     return console.log.apply(console, arguments);
   };
   DEFAULTINS = {
-    d: 1.1,
-    dl: 1.5,
+    d: 1200,
+    d_T: 1186,
+    dl: 6,
     l_o: 1,
-    l_s: 1,
-    m_s: 0.9,
+    l_s: 300,
+    m_s: 330,
     nb: true,
-    nu: 0.46,
     T_max: 1000,
     uy: 0.1,
-    x: 250
+    v: 0,
+    x: 226
   };
+  $.ajax({
+    url: 'package.json',
+    success: function(it){
+      return $('#version').text("v" + it.version);
+    }
+  });
+  $('#reset').on('click', function(){
+    return reset();
+  });
   $('input').on('change', function(){
     return calculate();
   });
   $('#nb').on('change', function(){
     return setRho_wAccess();
   });
-  $('.help-btn').on('click', function(){
+  $('.help .link').on('click', function(){
     return $(this).parents('.help').toggleClass('open closed');
   });
   populateIns(getInsByQuerystring());
-  setRho_wAccess();
   calculate();
   function calculate(){
-    var ins, outs, k, v;
+    var ins, outs, k, v, $el;
     ins = {};
     $('input[type="checkbox"]').each(function(){
       return ins[$(this).attr('id')] = $(this).prop('checked');
@@ -40,8 +49,13 @@
     outs = window.calc(ins);
     for (k in outs) {
       v = outs[k];
+      $el = $("#" + k + ", ." + k);
+      if (v.val != null) {
+        $el.removeClass().addClass(v.alert ? 'alert' : void 8);
+        v = v.val;
+      }
       v = Math.round(v * Math.pow(10, 4)) / Math.pow(10, 4);
-      $("#" + k + ", ." + k).text(v).val(v);
+      $el.text(v).val(v);
       if (ins[k]) {
         ins[k] = v;
       }
@@ -50,7 +64,7 @@
   }
   function getInsByQuerystring(){
     var ins, qs, k, v;
-    ins = DEFAULTINS;
+    ins = clone$(DEFAULTINS);
     qs = queryString.parse(location.search);
     for (k in qs) {
       v = qs[k];
@@ -59,24 +73,32 @@
     return ins;
   }
   function populateIns(it){
-    var k, v, t, $el, results$ = [];
+    var k, v, t, $el;
     for (k in it) {
       v = it[k];
       t = ($el = $("#" + k)).attr('type');
       if (t === 'checkbox') {
-        results$.push($el.prop('checked', v));
+        $el.prop('checked', v);
       } else {
-        results$.push($el.val(v));
+        $el.text(v).val(v);
       }
     }
-    return results$;
+    return setRho_wAccess();
   }
-  function setRho_wAccess(){
-    return $('#rho_w').prop('disabled', $('#nb').prop('checked'));
+  function reset(){
+    populateIns(DEFAULTINS);
+    return calculate();
   }
   function setQuerystringByIns(it){
     var qs;
     qs = queryString.stringify(it);
     return history.replaceState(void 8, "", "?" + qs);
+  }
+  function setRho_wAccess(){
+    return $('#rho_w').prop('disabled', $('#nb').prop('checked'));
+  }
+  function clone$(it){
+    function fun(){} fun.prototype = it;
+    return new fun;
   }
 }).call(this);
