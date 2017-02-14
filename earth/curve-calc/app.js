@@ -44,6 +44,9 @@
   $('#metric,#imperial').on('click', function(it){
     return switchUnit(it.target.value);
   });
+  $('form').on('submit', function(it){
+    return it.preventDefault();
+  });
   function calculate(){
     var h0, d0, unit, h0_km, d0_km, d1_km, h1_m, d1, h1, qs;
     h0 = getVal('h0');
