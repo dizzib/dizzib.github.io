@@ -1,1 +1,0 @@
-(function(){define(["underscore","lib/platform/features","strategy/touch/mouse","strategy/touch/native"],function(a,b,c,d){var e;return e=function(){function e(){}return e.prototype.init=function(){var e;return e=b.touch&&!b.is_moz_touch_enabled()?d:c,a.extend(this,e)},e}(),new e})}).call(this);

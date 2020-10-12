@@ -1,1 +1,0 @@
-(function(){define(function(){var e;return new(e=function(){function e(){}e.prototype.event_name_start="mousedown";e.prototype.event_name_move="mousemove";e.prototype.event_name_end="mouseup";e.prototype.get_raw_event=function(e){return e};e.prototype.__create_event_by_raw=function(e){return e};return e}())})}).call(this);

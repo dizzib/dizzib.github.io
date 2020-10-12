@@ -1,1 +1,0 @@
-(function(){define(["underscore","controller/settings","model/settings","plugin/model/settings"],function(n,t,e,i){var s;return new(s=function(){function s(){}s.prototype.init=function(){var s,o,r,u;u=i.settings;for(o=0,r=u.length;o<r;o++){s=u[o];t.load(s)}return e.settings=n.union(e.settings,i.settings)};return s}())})}).call(this);

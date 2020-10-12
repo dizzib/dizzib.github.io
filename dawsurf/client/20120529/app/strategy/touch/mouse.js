@@ -1,1 +1,0 @@
-(function(){define(function(){var a;return a=function(){function a(){}return a.prototype.event_name_start="mousedown",a.prototype.event_name_move="mousemove",a.prototype.event_name_end="mouseup",a.prototype.get_raw_event=function(a){return a},a}(),new a})}).call(this);

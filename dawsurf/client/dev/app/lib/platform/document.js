@@ -1,1 +1,0 @@
-(function(){define(["jquery","domReady!"],function(t){var n;return new(n=function(){function n(){}n.prototype.height=function(){return t(document).height()};n.prototype.height_raw=function(){return document.height};n.prototype.width=function(){return t(document).width()};n.prototype.width_raw=function(){return document.width};return n}())})}).call(this);

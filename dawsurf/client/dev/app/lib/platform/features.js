@@ -1,1 +1,0 @@
-(function(){define(["underscore","modernizr"],function(n,o){var t;return new(t=function(){function t(){n.extend(this,o)}t.prototype.orientation=window.onorientationchange!==void 0;t.prototype.is_moz_touch_enabled=function(){return o.mq("(-moz-touch-enabled)")};return t}())})}).call(this);

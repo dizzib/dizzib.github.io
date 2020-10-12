@@ -1,1 +1,0 @@
-(function(e){e(["./when"],function(e){return function(n,r){var t=e.defer();n.cancel=function(){return t.reject(r(n))};n.then(t.resolve,t.reject,t.progress);n.promise=t.promise;n.then=t.promise.then;return n}})})(typeof define=="function"?define:function(e,n){typeof module!="undefined"?module.exports=n(require("./when")):this.when_cancelable=n(this.when)});

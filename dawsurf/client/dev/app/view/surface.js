@@ -1,1 +1,0 @@
-(function(){var n=function(n,t){return function(){return n.apply(t,arguments)}};define(["jquery","css!./surface"],function(t){var r;return new(r=function(){function r(){this.show=n(this.show,this)}r.prototype.show=function(){return t("#surface").show().siblings(".page").hide()};return r}())})}).call(this);

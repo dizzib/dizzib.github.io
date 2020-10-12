@@ -1,1 +1,0 @@
-(function(){define(function(){var a;return a=function(){function a(){}return a.prototype.Directions={NONE:0,IN:1,OUT:2},a}(),new a})}).call(this);

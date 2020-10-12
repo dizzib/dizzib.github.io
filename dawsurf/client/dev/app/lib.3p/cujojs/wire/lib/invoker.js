@@ -1,1 +1,0 @@
-(function(n){n(function(n){return function(n,e){return function(t){return t[n].apply(t,e)}}})})(typeof define==="function"&&define.amd?define:function(n){module.exports=n(require)});

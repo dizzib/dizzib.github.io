@@ -1,1 +1,0 @@
-(function(){define(function(){var n;return new(n=function(){function n(){}n.prototype.version="dev";return n}())})}).call(this);

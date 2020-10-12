@@ -1,1 +1,0 @@
-define(["underscore"],function(a){a.throttle=function(a,b,c,d){b||(b=100);var e=0,f,g,h,i=c===!1?0:b;return function(){function l(){f&&(f=clearTimeout(f)),a.apply(h,g),e=j}var j=+(new Date),k=j-e-i;g=arguments,h=this,d&&d.apply(h,g),k>b?l():!f&&c!==!1&&(f=setTimeout(l,b))}}});

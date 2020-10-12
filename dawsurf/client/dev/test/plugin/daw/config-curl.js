@@ -1,1 +1,0 @@
-(function(){curl.baseUrl="../../../app";curl.paths.plugin="../plugin/daw";curl.paths.test="../test"}).call(this);

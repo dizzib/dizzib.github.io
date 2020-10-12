@@ -1,1 +1,0 @@
-(function(){define(["lib/profiler","lib/guardian"],function(a){return{wire$plugin:function(b,c,d){var e;return e=[],{facets:{profiler:{create:function(b,c,d){return e.push(c.target),c.id!=null&&(c.target.module_name=c.id),c.options.active&&a.profile(c.target),b.resolve()}}}}}}})}).call(this);

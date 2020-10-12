@@ -1,1 +1,0 @@
-(function(){define(["css!./app"],function(n){var t;return new(t=function(){function n(){}return n}())})}).call(this);

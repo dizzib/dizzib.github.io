@@ -1,1 +1,0 @@
-(function(){define({plugins:[{module:"lib.3p.extension/cujojs/wire/coupler"},{module:"lib.3p.extension/cujojs/wire/profiler"}],controller_plugin_settings:{module:"controller/plugin-settings",connect:{init:{controller_app:"on_post_init"},view_home:{init:"on_ready"}}},plugin_model_settings:{module:"plugin/model/settings"}})}).call(this);

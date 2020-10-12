@@ -1,1 +1,0 @@
-(function(){define(["jquery"],function(t){var e;return new(e=function(){function t(){}t.prototype.get_css_top=function(t){return t.offset().top};t.prototype.get_css_bottom=function(t){return t.offset().top+t.height()};t.prototype.get_css_left=function(t){return t.offset().left};t.prototype.get_pos_left=function(t){return t.offset().left};return t}())})}).call(this);

@@ -1,1 +1,0 @@
-(function(){var a=function(a,b){return function(){return a.apply(b,arguments)}};define(function(){var b;return b=function(){function b(){this.add=a(this.add,this)}return b.prototype.on_add=function(){},b.prototype.add=function(a){return this.on_add(a)},b}(),new b})}).call(this);

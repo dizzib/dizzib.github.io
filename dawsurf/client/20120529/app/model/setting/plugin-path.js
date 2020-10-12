@@ -1,1 +1,0 @@
-(function(){define(function(){var a;return a=function(){function a(){}return a.prototype.description="The path or url to the surface plugin.",a.prototype.is_reload=!0,a.prototype.name="Plugin location",a.prototype.scope="App",a.prototype.store_key="plugin.path",a.prototype.value_default=function(){return"../plugin/daw"},a}(),new a})}).call(this);

@@ -1,1 +1,0 @@
-(function(){define(["jquery"],function(e){e.ui.dialog.overlay._orig_create=e.ui.dialog.overlay.create;e.ui.dialog.overlay.create=function(i){return e.ui.dialog.overlay._orig_create(i).show()};if(e.find!=null){return define("sizzle",[],function(){return e.find})}})}).call(this);

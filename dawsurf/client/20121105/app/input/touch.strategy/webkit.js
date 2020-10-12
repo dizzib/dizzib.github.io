@@ -1,1 +1,0 @@
-(function(){define(function(){var a;return a=function(){function a(){}return a.prototype.event_name_start="touchstart",a.prototype.event_name_move="touchmove",a.prototype.event_name_end="touchend",a.prototype.get_raw_event=function(a){return a.originalEvent.touches[0]},a}(),new a})}).call(this);

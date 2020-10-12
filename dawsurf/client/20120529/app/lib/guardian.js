@@ -1,1 +1,0 @@
-(function(){define(["js!lib.3p/stacktrace-0.3.min.js"],function(){return window.assert=function(a){var b;if(!(b=a()))throw{name:"guardian.assert",message:"Assertion failed: "+a+" evaluated false at "+printStackTrace()};return b}})}).call(this);

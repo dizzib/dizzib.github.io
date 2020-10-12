@@ -1,1 +1,0 @@
-(function(n){n(function(){var n=Object.prototype.toString;return function(t){return function(e){if(n.call(e)!="[object Array]"){throw new Error("apply called with non-array arg")}return t.apply(null,e)}}})})(typeof define=="function"?define:function(n){typeof module!="undefined"?module.exports=n():this.when_apply=n()});

@@ -1,1 +1,0 @@
-(function(){define(["plugin/model/setting/foo","plugin/model/setting/bar"],function(a,b){var c;return c=function(){function c(){}return c.prototype.settings=[a,b],c}(),new c})}).call(this);

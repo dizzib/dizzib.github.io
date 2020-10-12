@@ -1,1 +1,0 @@
-(function(){define(function(){var a;return a=function(){function a(){}return a.prototype.description="A plugin setting which needs a reload.",a.prototype.is_reload=!0,a.prototype.name="Bar",a.prototype.scope="Plugin",a.prototype.store_key="plugin.example.bar",a.prototype.value_default=function(){return"default-2"},a}(),new a})}).call(this);
