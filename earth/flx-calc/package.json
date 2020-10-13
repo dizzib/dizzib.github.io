@@ -19,7 +19,7 @@
     "growly": "~1.2.0",
     "jade": "~1.6.0",
     "livescript": "~1.4.0",
-    "lodash": "~2.4.1",
+    "lodash": "~4.17.20",
     "marked": "~0.3.1",
     "nib": "~0.9.0",
     "node-static": "~0.7.7",
